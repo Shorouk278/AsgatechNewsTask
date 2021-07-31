@@ -15,6 +15,6 @@ MVP
 - [git repo](https://github.com/Shorouk278/AsgatechNewsTask.git/) 
 
 ### API
-- [request](https://newsapi.org/v2/everything?q=Apple&from=2021-07-28&sortBy=popularity&apiKey=API_KEY&page=20)
+- [request](https://newsapi.org/)
 
 
