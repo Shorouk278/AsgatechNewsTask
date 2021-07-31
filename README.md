@@ -15,6 +15,6 @@ MVP
 - [git repo](https://github.com/Shorouk278/AsgatechNewsTask.git/) 
 
 ### API
-- [request](https://newsapi.org/)
+- [News API](https://newsapi.org/)
 
 
