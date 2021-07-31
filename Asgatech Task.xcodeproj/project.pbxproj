@@ -1,0 +1,897 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37F718D36484E62B2CCE84CC /* Pods_Asgatech_Task_Asgatech_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAA1671E80FC1C1CF15232A /* Pods_Asgatech_Task_Asgatech_TaskUITests.framework */; };
+		826FC14D278132F0EE49EC33 /* Pods_Asgatech_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280D3F59C452E3FC2BB5F73B /* Pods_Asgatech_Task.framework */; };
+		C658A13626B10EDB0072251C /* CustomInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658A13526B10EDB0072251C /* CustomInterceptor.swift */; };
+		C658A13826B10FE50072251C /* NewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658A13726B10FE50072251C /* NewsPresenter.swift */; };
+		C658A13A26B11AD70072251C /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658A13926B11AD70072251C /* NewsModel.swift */; };
+		C65B304126B41E9F009A9741 /* ViewControllerHelperExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B304026B41E9F009A9741 /* ViewControllerHelperExtension.swift */; };
+		C65CE38026B4C42D0022B603 /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65CE37E26B4C42D0022B603 /* WebViewVC.swift */; };
+		C65CE38126B4C42D0022B603 /* WebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C65CE37F26B4C42D0022B603 /* WebViewVC.xib */; };
+		C65CE38326B4C8660022B603 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65CE38226B4C8660022B603 /* WebKit.framework */; };
+		C665496026B0FEBB008031EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665495F26B0FEBB008031EF /* AppDelegate.swift */; };
+		C665496226B0FEBB008031EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665496126B0FEBB008031EF /* SceneDelegate.swift */; };
+		C665496426B0FEBB008031EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665496326B0FEBB008031EF /* ViewController.swift */; };
+		C665496726B0FEBB008031EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C665496526B0FEBB008031EF /* Main.storyboard */; };
+		C665496926B0FEC0008031EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C665496826B0FEC0008031EF /* Assets.xcassets */; };
+		C665496C26B0FEC0008031EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C665496A26B0FEC0008031EF /* LaunchScreen.storyboard */; };
+		C665497726B0FEC0008031EF /* Asgatech_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665497626B0FEC0008031EF /* Asgatech_TaskTests.swift */; };
+		C665498226B0FEC0008031EF /* Asgatech_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665498126B0FEC0008031EF /* Asgatech_TaskUITests.swift */; };
+		C665499426B0FFED008031EF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665499326B0FFED008031EF /* APIService.swift */; };
+		C668DDC226B2346100195B80 /* NewsViewController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668DDC126B2346100195B80 /* NewsViewController+SearchBar.swift */; };
+		C668DDC926B265AA00195B80 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668DDC726B265AA00195B80 /* NewsDetailsViewController.swift */; };
+		C668DDCA26B265AA00195B80 /* NewsDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C668DDC826B265AA00195B80 /* NewsDetailsViewController.xib */; };
+		C668DDCC26B2921B00195B80 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668DDCB26B2921B00195B80 /* Helper.swift */; };
+		C69B033426B1384F00BAD024 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69B033226B1384F00BAD024 /* NewsViewController.swift */; };
+		C69B033526B1384F00BAD024 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69B033326B1384F00BAD024 /* NewsViewController.xib */; };
+		C69B033726B13A2400BAD024 /* NewsViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69B033626B13A2400BAD024 /* NewsViewController+CollectionView.swift */; };
+		C69B033B26B13E6F00BAD024 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69B033926B13E6F00BAD024 /* NewsCell.swift */; };
+		C69B033C26B13E6F00BAD024 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69B033A26B13E6F00BAD024 /* NewsCell.xib */; };
+		E1F33E0826B5C23D006EE03A /* CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F33E0726B5C23D006EE03A /* CollectionViewExtension.swift */; };
+		E1F33E1026B5D9ED006EE03A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F33E0F26B5D9ED006EE03A /* APIConstants.swift */; };
+		F21C501EC75DF752D53C3DD9 /* Pods_Asgatech_TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D371B330C0772EB3EECDC6A /* Pods_Asgatech_TaskTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C665497326B0FEC0008031EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C665495426B0FEBB008031EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C665495B26B0FEBB008031EF;
+			remoteInfo = "Asgatech Task";
+		};
+		C665497E26B0FEC0008031EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C665495426B0FEBB008031EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C665495B26B0FEBB008031EF;
+			remoteInfo = "Asgatech Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		280D3F59C452E3FC2BB5F73B /* Pods_Asgatech_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asgatech_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D371B330C0772EB3EECDC6A /* Pods_Asgatech_TaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asgatech_TaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC6446FAC6546716CB859B4 /* Pods-Asgatech Task-Asgatech TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asgatech Task-Asgatech TaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-Asgatech Task-Asgatech TaskUITests/Pods-Asgatech Task-Asgatech TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3AAA1671E80FC1C1CF15232A /* Pods_Asgatech_Task_Asgatech_TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asgatech_Task_Asgatech_TaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5555AF1AE0F24354512B3AFB /* Pods-Asgatech Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asgatech Task.debug.xcconfig"; path = "Target Support Files/Pods-Asgatech Task/Pods-Asgatech Task.debug.xcconfig"; sourceTree = "<group>"; };
+		68C3199AB4DC25DC85292982 /* Pods-Asgatech TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asgatech TaskTests.release.xcconfig"; path = "Target Support Files/Pods-Asgatech TaskTests/Pods-Asgatech TaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		6BA4D0BEC3B02A1588A1D090 /* Pods-Asgatech TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asgatech TaskTests.debug.xcconfig"; path = "Target Support Files/Pods-Asgatech TaskTests/Pods-Asgatech TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C658A13526B10EDB0072251C /* CustomInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInterceptor.swift; sourceTree = "<group>"; };
+		C658A13726B10FE50072251C /* NewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresenter.swift; sourceTree = "<group>"; };
+		C658A13926B11AD70072251C /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		C65B304026B41E9F009A9741 /* ViewControllerHelperExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHelperExtension.swift; sourceTree = "<group>"; };
+		C65CE37E26B4C42D0022B603 /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
+		C65CE37F26B4C42D0022B603 /* WebViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewVC.xib; sourceTree = "<group>"; };
+		C65CE38226B4C8660022B603 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C665495C26B0FEBB008031EF /* Asgatech Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Asgatech Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C665495F26B0FEBB008031EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C665496126B0FEBB008031EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C665496326B0FEBB008031EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C665496626B0FEBB008031EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C665496826B0FEC0008031EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C665496B26B0FEC0008031EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C665496D26B0FEC0008031EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C665497226B0FEC0008031EF /* Asgatech TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Asgatech TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C665497626B0FEC0008031EF /* Asgatech_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asgatech_TaskTests.swift; sourceTree = "<group>"; };
+		C665497826B0FEC0008031EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C665497D26B0FEC0008031EF /* Asgatech TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Asgatech TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C665498126B0FEC0008031EF /* Asgatech_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asgatech_TaskUITests.swift; sourceTree = "<group>"; };
+		C665498326B0FEC0008031EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C665499326B0FFED008031EF /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C668DDC126B2346100195B80 /* NewsViewController+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsViewController+SearchBar.swift"; sourceTree = "<group>"; };
+		C668DDC726B265AA00195B80 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
+		C668DDC826B265AA00195B80 /* NewsDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailsViewController.xib; sourceTree = "<group>"; };
+		C668DDCB26B2921B00195B80 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		C69B033226B1384F00BAD024 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		C69B033326B1384F00BAD024 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		C69B033626B13A2400BAD024 /* NewsViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		C69B033926B13E6F00BAD024 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		C69B033A26B13E6F00BAD024 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		E1F33E0726B5C23D006EE03A /* CollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewExtension.swift; sourceTree = "<group>"; };
+		E1F33E0F26B5D9ED006EE03A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		F38D06A136910B161F8D7A0C /* Pods-Asgatech Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asgatech Task.release.xcconfig"; path = "Target Support Files/Pods-Asgatech Task/Pods-Asgatech Task.release.xcconfig"; sourceTree = "<group>"; };
+		F7EE6D8E7A2CC3FCE2DA002B /* Pods-Asgatech Task-Asgatech TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asgatech Task-Asgatech TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-Asgatech Task-Asgatech TaskUITests/Pods-Asgatech Task-Asgatech TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C665495926B0FEBB008031EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C65CE38326B4C8660022B603 /* WebKit.framework in Frameworks */,
+				826FC14D278132F0EE49EC33 /* Pods_Asgatech_Task.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C665496F26B0FEC0008031EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21C501EC75DF752D53C3DD9 /* Pods_Asgatech_TaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C665497A26B0FEC0008031EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F718D36484E62B2CCE84CC /* Pods_Asgatech_Task_Asgatech_TaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DE001C4B5C7F515E5DF4F0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C65CE38226B4C8660022B603 /* WebKit.framework */,
+				280D3F59C452E3FC2BB5F73B /* Pods_Asgatech_Task.framework */,
+				3AAA1671E80FC1C1CF15232A /* Pods_Asgatech_Task_Asgatech_TaskUITests.framework */,
+				2D371B330C0772EB3EECDC6A /* Pods_Asgatech_TaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFF30A814A6BB885DA02323C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5555AF1AE0F24354512B3AFB /* Pods-Asgatech Task.debug.xcconfig */,
+				F38D06A136910B161F8D7A0C /* Pods-Asgatech Task.release.xcconfig */,
+				2FC6446FAC6546716CB859B4 /* Pods-Asgatech Task-Asgatech TaskUITests.debug.xcconfig */,
+				F7EE6D8E7A2CC3FCE2DA002B /* Pods-Asgatech Task-Asgatech TaskUITests.release.xcconfig */,
+				6BA4D0BEC3B02A1588A1D090 /* Pods-Asgatech TaskTests.debug.xcconfig */,
+				68C3199AB4DC25DC85292982 /* Pods-Asgatech TaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C665495326B0FEBB008031EF = {
+			isa = PBXGroup;
+			children = (
+				C665495E26B0FEBB008031EF /* Asgatech Task */,
+				C665497526B0FEC0008031EF /* Asgatech TaskTests */,
+				C665498026B0FEC0008031EF /* Asgatech TaskUITests */,
+				C665495D26B0FEBB008031EF /* Products */,
+				AFF30A814A6BB885DA02323C /* Pods */,
+				1DE001C4B5C7F515E5DF4F0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C665495D26B0FEBB008031EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C665495C26B0FEBB008031EF /* Asgatech Task.app */,
+				C665497226B0FEC0008031EF /* Asgatech TaskTests.xctest */,
+				C665497D26B0FEC0008031EF /* Asgatech TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C665495E26B0FEBB008031EF /* Asgatech Task */ = {
+			isa = PBXGroup;
+			children = (
+				C665499226B0FF95008031EF /* Service */,
+				C69B033126B11CD800BAD024 /* Others */,
+				C668DDC326B262C800195B80 /* News */,
+				C668DDC426B2631600195B80 /* News Details */,
+				C665495F26B0FEBB008031EF /* AppDelegate.swift */,
+				C665496126B0FEBB008031EF /* SceneDelegate.swift */,
+				C665496526B0FEBB008031EF /* Main.storyboard */,
+				C665496826B0FEC0008031EF /* Assets.xcassets */,
+				C665496A26B0FEC0008031EF /* LaunchScreen.storyboard */,
+				C665496326B0FEBB008031EF /* ViewController.swift */,
+				C665496D26B0FEC0008031EF /* Info.plist */,
+			);
+			path = "Asgatech Task";
+			sourceTree = "<group>";
+		};
+		C665497526B0FEC0008031EF /* Asgatech TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				C665497626B0FEC0008031EF /* Asgatech_TaskTests.swift */,
+				C665497826B0FEC0008031EF /* Info.plist */,
+			);
+			path = "Asgatech TaskTests";
+			sourceTree = "<group>";
+		};
+		C665498026B0FEC0008031EF /* Asgatech TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C665498126B0FEC0008031EF /* Asgatech_TaskUITests.swift */,
+				C665498326B0FEC0008031EF /* Info.plist */,
+			);
+			path = "Asgatech TaskUITests";
+			sourceTree = "<group>";
+		};
+		C665498F26B0FF1D008031EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C69B033226B1384F00BAD024 /* NewsViewController.swift */,
+				C69B033326B1384F00BAD024 /* NewsViewController.xib */,
+				C69B033626B13A2400BAD024 /* NewsViewController+CollectionView.swift */,
+				C668DDC126B2346100195B80 /* NewsViewController+SearchBar.swift */,
+				C69B033826B13A3E00BAD024 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C665499026B0FF35008031EF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C658A13726B10FE50072251C /* NewsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C665499126B0FF45008031EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C658A13926B11AD70072251C /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C665499226B0FF95008031EF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C665499326B0FFED008031EF /* APIService.swift */,
+				C658A13526B10EDB0072251C /* CustomInterceptor.swift */,
+				E1F33E0F26B5D9ED006EE03A /* APIConstants.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C668DDC326B262C800195B80 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C665499126B0FF45008031EF /* Model */,
+				C665499026B0FF35008031EF /* Presenter */,
+				C665498F26B0FF1D008031EF /* View */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		C668DDC426B2631600195B80 /* News Details */ = {
+			isa = PBXGroup;
+			children = (
+				C668DDC626B2646D00195B80 /* View */,
+			);
+			path = "News Details";
+			sourceTree = "<group>";
+		};
+		C668DDC626B2646D00195B80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C668DDC726B265AA00195B80 /* NewsDetailsViewController.swift */,
+				C668DDC826B265AA00195B80 /* NewsDetailsViewController.xib */,
+				C65CE37E26B4C42D0022B603 /* WebViewVC.swift */,
+				C65CE37F26B4C42D0022B603 /* WebViewVC.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C69B033126B11CD800BAD024 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				C668DDCB26B2921B00195B80 /* Helper.swift */,
+				C65B304026B41E9F009A9741 /* ViewControllerHelperExtension.swift */,
+				E1F33E0726B5C23D006EE03A /* CollectionViewExtension.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		C69B033826B13A3E00BAD024 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C69B033926B13E6F00BAD024 /* NewsCell.swift */,
+				C69B033A26B13E6F00BAD024 /* NewsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C665495B26B0FEBB008031EF /* Asgatech Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C665498626B0FEC0008031EF /* Build configuration list for PBXNativeTarget "Asgatech Task" */;
+			buildPhases = (
+				49416357D8E868558F0B8B37 /* [CP] Check Pods Manifest.lock */,
+				C665495826B0FEBB008031EF /* Sources */,
+				C665495926B0FEBB008031EF /* Frameworks */,
+				C665495A26B0FEBB008031EF /* Resources */,
+				38D432ED7C38E58D74AF2245 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Asgatech Task";
+			productName = "Asgatech Task";
+			productReference = C665495C26B0FEBB008031EF /* Asgatech Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C665497126B0FEC0008031EF /* Asgatech TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C665498926B0FEC0008031EF /* Build configuration list for PBXNativeTarget "Asgatech TaskTests" */;
+			buildPhases = (
+				48DF5ED0659ADD6F747BB18A /* [CP] Check Pods Manifest.lock */,
+				C665496E26B0FEC0008031EF /* Sources */,
+				C665496F26B0FEC0008031EF /* Frameworks */,
+				C665497026B0FEC0008031EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C665497426B0FEC0008031EF /* PBXTargetDependency */,
+			);
+			name = "Asgatech TaskTests";
+			productName = "Asgatech TaskTests";
+			productReference = C665497226B0FEC0008031EF /* Asgatech TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C665497C26B0FEC0008031EF /* Asgatech TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C665498C26B0FEC0008031EF /* Build configuration list for PBXNativeTarget "Asgatech TaskUITests" */;
+			buildPhases = (
+				F4EE3CC788338DECC9C86D07 /* [CP] Check Pods Manifest.lock */,
+				C665497926B0FEC0008031EF /* Sources */,
+				C665497A26B0FEC0008031EF /* Frameworks */,
+				C665497B26B0FEC0008031EF /* Resources */,
+				AF8B689839FEE0ABE93F8F50 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C665497F26B0FEC0008031EF /* PBXTargetDependency */,
+			);
+			name = "Asgatech TaskUITests";
+			productName = "Asgatech TaskUITests";
+			productReference = C665497D26B0FEC0008031EF /* Asgatech TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C665495426B0FEBB008031EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Shorouk Mohamed";
+				TargetAttributes = {
+					C665495B26B0FEBB008031EF = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					C665497126B0FEC0008031EF = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = C665495B26B0FEBB008031EF;
+					};
+					C665497C26B0FEC0008031EF = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = C665495B26B0FEBB008031EF;
+					};
+				};
+			};
+			buildConfigurationList = C665495726B0FEBB008031EF /* Build configuration list for PBXProject "Asgatech Task" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C665495326B0FEBB008031EF;
+			productRefGroup = C665495D26B0FEBB008031EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C665495B26B0FEBB008031EF /* Asgatech Task */,
+				C665497126B0FEC0008031EF /* Asgatech TaskTests */,
+				C665497C26B0FEC0008031EF /* Asgatech TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C665495A26B0FEBB008031EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C65CE38126B4C42D0022B603 /* WebViewVC.xib in Resources */,
+				C668DDCA26B265AA00195B80 /* NewsDetailsViewController.xib in Resources */,
+				C665496C26B0FEC0008031EF /* LaunchScreen.storyboard in Resources */,
+				C665496926B0FEC0008031EF /* Assets.xcassets in Resources */,
+				C69B033C26B13E6F00BAD024 /* NewsCell.xib in Resources */,
+				C665496726B0FEBB008031EF /* Main.storyboard in Resources */,
+				C69B033526B1384F00BAD024 /* NewsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C665497026B0FEC0008031EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C665497B26B0FEC0008031EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38D432ED7C38E58D74AF2245 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Asgatech Task/Pods-Asgatech Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Asgatech Task/Pods-Asgatech Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Asgatech Task/Pods-Asgatech Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48DF5ED0659ADD6F747BB18A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Asgatech TaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49416357D8E868558F0B8B37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Asgatech Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF8B689839FEE0ABE93F8F50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Asgatech Task-Asgatech TaskUITests/Pods-Asgatech Task-Asgatech TaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Asgatech Task-Asgatech TaskUITests/Pods-Asgatech Task-Asgatech TaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Asgatech Task-Asgatech TaskUITests/Pods-Asgatech Task-Asgatech TaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4EE3CC788338DECC9C86D07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Asgatech Task-Asgatech TaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C665495826B0FEBB008031EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C668DDC926B265AA00195B80 /* NewsDetailsViewController.swift in Sources */,
+				C658A13A26B11AD70072251C /* NewsModel.swift in Sources */,
+				E1F33E1026B5D9ED006EE03A /* APIConstants.swift in Sources */,
+				C65CE38026B4C42D0022B603 /* WebViewVC.swift in Sources */,
+				C665496426B0FEBB008031EF /* ViewController.swift in Sources */,
+				C665496026B0FEBB008031EF /* AppDelegate.swift in Sources */,
+				C665499426B0FFED008031EF /* APIService.swift in Sources */,
+				C69B033B26B13E6F00BAD024 /* NewsCell.swift in Sources */,
+				C65B304126B41E9F009A9741 /* ViewControllerHelperExtension.swift in Sources */,
+				C69B033726B13A2400BAD024 /* NewsViewController+CollectionView.swift in Sources */,
+				C658A13826B10FE50072251C /* NewsPresenter.swift in Sources */,
+				C658A13626B10EDB0072251C /* CustomInterceptor.swift in Sources */,
+				C668DDC226B2346100195B80 /* NewsViewController+SearchBar.swift in Sources */,
+				E1F33E0826B5C23D006EE03A /* CollectionViewExtension.swift in Sources */,
+				C668DDCC26B2921B00195B80 /* Helper.swift in Sources */,
+				C665496226B0FEBB008031EF /* SceneDelegate.swift in Sources */,
+				C69B033426B1384F00BAD024 /* NewsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C665496E26B0FEC0008031EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C665497726B0FEC0008031EF /* Asgatech_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C665497926B0FEC0008031EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C665498226B0FEC0008031EF /* Asgatech_TaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C665497426B0FEC0008031EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C665495B26B0FEBB008031EF /* Asgatech Task */;
+			targetProxy = C665497326B0FEC0008031EF /* PBXContainerItemProxy */;
+		};
+		C665497F26B0FEC0008031EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C665495B26B0FEBB008031EF /* Asgatech Task */;
+			targetProxy = C665497E26B0FEC0008031EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C665496526B0FEBB008031EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C665496626B0FEBB008031EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C665496A26B0FEC0008031EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C665496B26B0FEC0008031EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C665498426B0FEC0008031EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C665498526B0FEC0008031EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C665498726B0FEC0008031EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5555AF1AE0F24354512B3AFB /* Pods-Asgatech Task.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6PF9J8HWS;
+				INFOPLIST_FILE = "Asgatech Task/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Asgatech-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C665498826B0FEC0008031EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38D06A136910B161F8D7A0C /* Pods-Asgatech Task.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6PF9J8HWS;
+				INFOPLIST_FILE = "Asgatech Task/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Asgatech-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C665498A26B0FEC0008031EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BA4D0BEC3B02A1588A1D090 /* Pods-Asgatech TaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQM9DBNZR5;
+				INFOPLIST_FILE = "Asgatech TaskTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ITI.Asgatech-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Asgatech Task.app/Asgatech Task";
+			};
+			name = Debug;
+		};
+		C665498B26B0FEC0008031EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C3199AB4DC25DC85292982 /* Pods-Asgatech TaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQM9DBNZR5;
+				INFOPLIST_FILE = "Asgatech TaskTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ITI.Asgatech-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Asgatech Task.app/Asgatech Task";
+			};
+			name = Release;
+		};
+		C665498D26B0FEC0008031EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FC6446FAC6546716CB859B4 /* Pods-Asgatech Task-Asgatech TaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQM9DBNZR5;
+				INFOPLIST_FILE = "Asgatech TaskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ITI.Asgatech-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Asgatech Task";
+			};
+			name = Debug;
+		};
+		C665498E26B0FEC0008031EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7EE6D8E7A2CC3FCE2DA002B /* Pods-Asgatech Task-Asgatech TaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQM9DBNZR5;
+				INFOPLIST_FILE = "Asgatech TaskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ITI.Asgatech-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Asgatech Task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C665495726B0FEBB008031EF /* Build configuration list for PBXProject "Asgatech Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C665498426B0FEC0008031EF /* Debug */,
+				C665498526B0FEC0008031EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C665498626B0FEC0008031EF /* Build configuration list for PBXNativeTarget "Asgatech Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C665498726B0FEC0008031EF /* Debug */,
+				C665498826B0FEC0008031EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C665498926B0FEC0008031EF /* Build configuration list for PBXNativeTarget "Asgatech TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C665498A26B0FEC0008031EF /* Debug */,
+				C665498B26B0FEC0008031EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C665498C26B0FEC0008031EF /* Build configuration list for PBXNativeTarget "Asgatech TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C665498D26B0FEC0008031EF /* Debug */,
+				C665498E26B0FEC0008031EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C665495426B0FEBB008031EF /* Project object */;
+}

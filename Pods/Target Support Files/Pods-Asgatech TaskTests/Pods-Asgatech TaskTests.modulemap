@@ -1,0 +1,6 @@
+framework module Pods_Asgatech_TaskTests {
+  umbrella header "Pods-Asgatech TaskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
